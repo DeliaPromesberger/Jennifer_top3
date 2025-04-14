@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_63d297babfc65b292154bfe118661735 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_63d297babfc65b292154bfe118661735" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_63d297babfc65b292154bfe118661735 = L.map(
+                "map_63d297babfc65b292154bfe118661735",
+                {
+                    center: [47.5496, -122.25933333333332],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ad2e59190588dbf378aa557e2ab033e1 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ad2e59190588dbf378aa557e2ab033e1.addTo(map_63d297babfc65b292154bfe118661735);
+        
+    
+            var marker_d18f686448512d9db30bf7dbd352e12b = L.marker(
+                [47.557, -122.21],
+                {
+}
+            ).addTo(map_63d297babfc65b292154bfe118661735);
+        
+    
+            var icon_69f6273206752dbce066e61ecbfc7dc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52ecafdbf90bb4246a2580e57b2e484a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86f8552b761b76fb3b70ebd6f53384ad = $(`<div id="html_86f8552b761b76fb3b70ebd6f53384ad" style="width: 100.0%; height: 100.0%;">     🏡 <b>Top #1</b><br>     💰 <b>Price:</b> $4,670,000<br>     🛠️ <b>Renovated:</b> 2009<br>     🧱 <b>Grade:</b> 12<br>     📐 <b>Living Area:</b> 9640 sqft<br>     🌊 <b>Waterfront:</b> ✅     </div>`)[0];
+                popup_52ecafdbf90bb4246a2580e57b2e484a.setContent(html_86f8552b761b76fb3b70ebd6f53384ad);
+            
+        
+
+        marker_d18f686448512d9db30bf7dbd352e12b.bindPopup(popup_52ecafdbf90bb4246a2580e57b2e484a)
+        ;
+
+        
+    
+    
+            marker_d18f686448512d9db30bf7dbd352e12b.bindTooltip(
+                `<div>
+                     🏡 Top #1: $4,670,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d18f686448512d9db30bf7dbd352e12b.setIcon(icon_69f6273206752dbce066e61ecbfc7dc3);
+            
+    
+            var marker_3990deed0b85c9744bb86e8ba52f80b5 = L.marker(
+                [47.65, -122.214],
+                {
+}
+            ).addTo(map_63d297babfc65b292154bfe118661735);
+        
+    
+            var icon_2a2be24ba4c52b2588c6788e3e020776 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f4bd400e0518194a77a1a134a1d6284 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3184f29c8efb1623a0fa8dd79c0e53f2 = $(`<div id="html_3184f29c8efb1623a0fa8dd79c0e53f2" style="width: 100.0%; height: 100.0%;">     🏡 <b>Top #2</b><br>     💰 <b>Price:</b> $7,060,000<br>     🛠️ <b>Renovated:</b> 2001<br>     🧱 <b>Grade:</b> 11<br>     📐 <b>Living Area:</b> 10040 sqft<br>     🌊 <b>Waterfront:</b> ✅     </div>`)[0];
+                popup_7f4bd400e0518194a77a1a134a1d6284.setContent(html_3184f29c8efb1623a0fa8dd79c0e53f2);
+            
+        
+
+        marker_3990deed0b85c9744bb86e8ba52f80b5.bindPopup(popup_7f4bd400e0518194a77a1a134a1d6284)
+        ;
+
+        
+    
+    
+            marker_3990deed0b85c9744bb86e8ba52f80b5.bindTooltip(
+                `<div>
+                     🏡 Top #2: $7,060,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3990deed0b85c9744bb86e8ba52f80b5.setIcon(icon_2a2be24ba4c52b2588c6788e3e020776);
+            
+    
+            var marker_4370cdef40d9dd0fa2e60df55650bcad = L.marker(
+                [47.4418, -122.354],
+                {
+}
+            ).addTo(map_63d297babfc65b292154bfe118661735);
+        
+    
+            var icon_3b157b1aea731a1c077a5407aa8c7dee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99609c948c466e3aac2d08e9aedd0512 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b007e58a8cbb6ad3a46eeeb655ad149 = $(`<div id="html_9b007e58a8cbb6ad3a46eeeb655ad149" style="width: 100.0%; height: 100.0%;">     🏡 <b>Top #3</b><br>     💰 <b>Price:</b> $1,640,000<br>     🛠️ <b>Renovated:</b> 1990<br>     🧱 <b>Grade:</b> 12<br>     📐 <b>Living Area:</b> 4660 sqft<br>     🌊 <b>Waterfront:</b> ✅     </div>`)[0];
+                popup_99609c948c466e3aac2d08e9aedd0512.setContent(html_9b007e58a8cbb6ad3a46eeeb655ad149);
+            
+        
+
+        marker_4370cdef40d9dd0fa2e60df55650bcad.bindPopup(popup_99609c948c466e3aac2d08e9aedd0512)
+        ;
+
+        
+    
+    
+            marker_4370cdef40d9dd0fa2e60df55650bcad.bindTooltip(
+                `<div>
+                     🏡 Top #3: $1,640,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4370cdef40d9dd0fa2e60df55650bcad.setIcon(icon_3b157b1aea731a1c077a5407aa8c7dee);
+            
+</script>
+</html>
